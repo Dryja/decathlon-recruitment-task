@@ -9,4 +9,6 @@ ALLOWED_HOSTS = [os.environ['SITE_URL']]
 sentry_sdk.init(
     dsn=os.environ['SENTRY_KEY'], integrations=[DjangoIntegration()])
 
-DATABASES = {'default': dj_database_url.config(default=config('DATABASE_URL'))}
+DATABASES = {
+    'default': dj_database_url.config(default=os.environ['DATABASE_URL'])
+}
