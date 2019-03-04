@@ -12,6 +12,7 @@ djangorestframework = "*"
 sentry-sdk = "==0.7.4"
 psycopg2 = "*"
 requests = "*"
+dj-database-url = "*"
 
 [requires]
 python_version = "3.7"
