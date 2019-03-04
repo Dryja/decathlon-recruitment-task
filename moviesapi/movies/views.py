@@ -8,8 +8,7 @@ from movies.models import Movie, Comment
 from movies.serializers import MovieSerializer, AddMovieSerializer, CommentSerializer, TopMovieSerializer
 
 
-class Movies(
-        viewsets.ViewSet, ):
+class Movies(viewsets.ViewSet):
     """
     View for listing and adding movies
     """
