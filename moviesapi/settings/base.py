@@ -4,6 +4,7 @@ from pathlib import Path
 BASE_DIR = Path('.')
 
 SECRET_KEY = os.environ['SECRET_KEY']
+OMDBAPI_KEY = os.environ['OMDBAPI_KEY']
 
 DEBUG = False
 
@@ -15,6 +16,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'django_filters',
+    'movies',
 ]
 
 MIDDLEWARE = [
