@@ -4,7 +4,7 @@ from sentry_sdk.integrations.django import DjangoIntegration
 
 from .base import *
 
-ALLOWED_HOSTS = ['']
+ALLOWED_HOSTS = [os.environ['SITE_URL']]
 sentry_sdk.init(
     dsn=os.environ['SENTRY_KEY'], integrations=[DjangoIntegration()])
 
