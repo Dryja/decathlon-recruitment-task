@@ -1,1 +1,1 @@
-web: gunicorn moviesapi.moviesapi.wsgi:application --log-file -
+web:  sh -c 'cd moviesapi && gunicorn moviesapi.wsgi:application --log-file -'
